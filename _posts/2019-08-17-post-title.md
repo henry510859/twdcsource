@@ -2,17 +2,17 @@
 layout: post
 title: "使用 Jamf 與 classroom 管理 macOS"
 date: 2019-08-17 06:38:38
-image: 'https://github.com/henry510859/TWDC_blog_photo/blob/master/使用%20Jamf%20與%20classroom%20管理%20macOS/classroom%20icon.icns?raw=true'
+image: 'https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/classroom%20photo.jpg'
 description:
 category: 'blog'
 tags:
 - blog
-twitter_text:
+twitter_text:TWDC_blog_photoTWDC_blog_photo
 introduction:
 ---
 
 #macOS
-
+---
 在要開始進行管理之前，先確定要管理的所有 Mac 裝置都已進入監管
 ![Jamf設備監管](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20設備監管.png?token=AM5P3E7JTDGJBSJUX5UPVTC5L5LS6)
 ##App 購買＆派送
