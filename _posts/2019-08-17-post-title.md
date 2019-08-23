@@ -7,7 +7,7 @@ description:
 category: 'blog'
 tags:
 - blog
-twitter_text:TWDC_blog_photoTWDC_blog_photo
+twitter_text:
 introduction:
 ---
 
