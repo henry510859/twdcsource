@@ -2,9 +2,8 @@
 title: TWDC | Apple Authorized Training Provider
 email: service@twdc.tw
 description: Some text about your blog.
-baseurl: ""
-url: "" 
-google_analytics: "UA-XXXXXXXX-X"
+url: "https://twdc.blog" 
+#google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
 username: TWDC
