@@ -1,4 +1,5 @@
 git pull origin master
+rm Gemfile.lock
 bundle install
 jekyll build
 cp -r _site/. ../twdc_blog
