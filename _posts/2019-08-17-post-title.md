@@ -15,7 +15,7 @@ introduction:
 ---
 在要開始進行管理之前，先確定要管理的所有 Mac 裝置都已進入監管
 ![Jamf設備監管](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20設備監管.png?token=AM5P3E7JTDGJBSJUX5UPVTC5L5LS6)
-##App 購買＆派送
+## App 購買＆派送
 Mac 都確定有進入監管之後我們就可以開始為每一台 Mac 或是特定的 Mac 安裝 App。
 我們首先要先進入 Apple Business Manager 或是 Apple School Manager
 ![ASM](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/ASM.png?token=AM5P3EZUEAYPQR73JMKYNP25L5KDA)
@@ -25,7 +25,7 @@ Mac 都確定有進入監管之後我們就可以開始為每一台 Mac 或是�
 進入 Jamf 管理頁面，點選 Computers ，點選選單裡的 Mac App  Store Apps。
 ![jamf App派發](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20App派發.png?token=AM5P3EYSPAY7PLQDIHAYRHC5L5LWO)
 點選剛才購買的 classroom (課堂）
-![jamf App派發1](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20App派發1.png?token=AM5P3E7PSBHDYEI23QFAMI25L5LXM)
+![jamf App派發1](../assets/img/classroom_macOS/jamf%20App派發1.png)
 點選右下角 Edit 來變更設定
 ![jamf App派發2](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20App派發2.png?token=AM5P3EYYOOIBULAZLIVDKWK5L5LYM)
 把 Distribution Method 的設定改成 Install Automatically/Prompt Users to install，這樣子課堂 App 才會自動下載到 Mac 裡。
