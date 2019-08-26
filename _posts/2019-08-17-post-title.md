@@ -11,11 +11,11 @@ twitter_text:
 introduction:
 ---
 
-#macOS
+# macOS
 ---
 在要開始進行管理之前，先確定要管理的所有 Mac 裝置都已進入監管
-![Jamf設備監管](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20設備監管.png?token=AM5P3E7JTDGJBSJUX5UPVTC5L5LS6)
-##App 購買＆派送
+![Jamf設備監管](/assets/img/2019/08/jamf 設備監管.png)
+## App 購買＆派送
 Mac 都確定有進入監管之後我們就可以開始為每一台 Mac 或是特定的 Mac 安裝 App。
 我們首先要先進入 Apple Business Manager 或是 Apple School Manager
 ![ASM](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/ASM.png?token=AM5P3EZUEAYPQR73JMKYNP25L5KDA)
@@ -38,7 +38,7 @@ Mac 都確定有進入監管之後我們就可以開始為每一台 Mac 或是�
 ![jamf App派發6](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20App派發6.png?token=AM5P3E4JRV6C4UEOVUIMHXS5L5MEQ)
 再來點選 VPP，把 Assign VPP Content 勾選起來之後點選  Save，這樣App 才會自動派發到指定的裝置進行下載。
 ![jamf App派發7](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20App派發7.png?token=AM5P3E7HS6IALF34FKCOXPK5L5MF4)
-##建立教師以及學生使用者  
+## 建立教師以及學生使用者  
 在建立教師以及學生使用者之前，先到教師以及學生的 Mac  把使用者帳號名稱記起來。
 先打開系統偏好設定，點選使用者與群組。
 ![教師使用者帳戶](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/教師使用者帳戶.png?token=AM5P3E26YOBUF6CA4725GUK5L5MHK)
@@ -53,7 +53,7 @@ Mac 都確定有進入監管之後我們就可以開始為每一台 Mac 或是�
 *只要新增新的電腦就要增加使用者，建議一台 Mac 只設定一個使用者。*
 ![jamf 使用者建立3](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20使用者建立3.png?token=AM5P3EYIN4D366L5K6FEQBS5L5MJO)
 
-##建立課堂
+## 建立課堂
 再來我們要在 Jamf 裡面建立課堂，這樣老師以及學生的 Mac 就可以自動加入到課堂 classroom 裡面。  
 打開 Jamf ，點選 Computers ，選擇 Classes ，點選 ＋New。  
 ![jamf 建立課程1](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/jamf%20建立課程1.png?token=AM5P3E3KUBI3G27YO43SX7C5L5MMW)
@@ -67,7 +67,7 @@ Mac 都確定有進入監管之後我們就可以開始為每一台 Mac 或是�
 大功告成，再來只要打開教師 Mac 的課堂 App  就可以看到學生加入了。  
 ![課堂](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/使用%20Jamf%20與%20classroom%20管理%20macOS/課堂.png?token=AM5P3E6XS4XV3EDTJHN2BQK5L5MP4)
 
-###疑難排解
+### 疑難排解
 
 Ｑ：為什麼我的課堂沒有在課堂 App 裡面顯示出來?  
 Ａ：先確定在系統偏好設定裡面的描述檔有 EDU 教育設定描述檔，
