@@ -78,6 +78,7 @@ introduction:
 ![aatp.com.tw](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/aatp.com.tw.png)
 
 再來教大家如何從剛才向Let's Encrypt 申請憑證來建立憑證鍊
+
 ▼ 打開 Terminal(終端機)，輸入以下指令
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
