@@ -2,7 +2,7 @@
 layout: post
 title: "使用Let's Encrypt 來申請憑證並且建立憑證鍊 "
 date: 2020-01-15 11:00:00
-image: '![cover_photo](../)'
+image: '![cover_photo](../assets/img/NoMAD_Login/NoMAD-Login-cover-photo.png)'
 description:
 category: 'NoMAD'
 tags:

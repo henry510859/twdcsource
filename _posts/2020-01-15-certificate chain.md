@@ -2,7 +2,7 @@
 layout: post
 title: "使用Let's Encrypt 來申請憑證並且建立憑證鍊 "
 date: 2020-01-15 11:00:00
-image: '![cover_photo](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/cover_photo.jpg)'
+image: '![cover_photo](../assets/img/certificateChain/cover_photo.jpg)'
 description:
 category: 'Certificate'
 tags:
@@ -32,37 +32,37 @@ introduction:
 在向 Let's Encrypt 申請憑證前，請先確定要申請的網域是自己所有，因為在後續的教學會需要進入到網域的 DNS 管理介面去新增資料來驗證網域。
 
 ▼ 打開 [SSL For Free](https://www.sslforfree.com) 線上工具
-![sslforfree1](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree1.png)
+![sslforfree1](../assets/img/certificateChain/sslforfree1.png)
 ▼ 在網址列輸入網域名稱(這邊以 TWDC 的官網來做示範，輸入完成後點選 Create Free SSL Certificate
-![sslforfree2](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree2.png)
+![sslforfree2](../assets/img/certificateChain/sslforfree2.png)
 ▼ 這個網站提供了 ３種驗證方式，Automatic FTP Verification是當主機有開啟 FTP 服務就可以使用、Manual Verification是把檔案放入主機內來驗證，Manual Verification(DNS)就是在DNS 管理頁面中新增 TXT 記錄來驗證，本教學以這個方法進行驗證
-![sslforfree3](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree3.png)
+![sslforfree3](../assets/img/certificateChain/sslforfree3.png)
 ▼ 點選 Manually Verify Domain
-![sslforfree4](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree4.png)
+![sslforfree4](../assets/img/certificateChain/sslforfree4.png)
 ▼ 另外打開您購買網域的 DNS 管理，點選新增 TXT record
-![sslforfree5](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree5.png)
+![sslforfree5](../assets/img/certificateChain/sslforfree5.png)
 ▼ 複製第一個欄位
-![sslforfree6](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree6.png)
+![sslforfree6](../assets/img/certificateChain/sslforfree6.png)
 ▼ 在 hostname 的位置貼上
-![sslforfree7](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree7.png)
+![sslforfree7](../assets/img/certificateChain/sslforfree7.png)
 ▼ 複製第二個欄位
-![sslforfree8](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree8.png)
+![sslforfree8](../assets/img/certificateChain/sslforfree8.png)
 ▼ 在 value 的位置貼上
-![sslforfree9](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree9.png)
+![sslforfree9](../assets/img/certificateChain/sslforfree9.png)
 ▼ TTL 設定為 1 小時
-![sslforfree10](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree10.png)
+  ![sslforfree10](../assets/img/certificateChain/sslforfree10.png)
 ▼ 點選 Save
-![sslforfree11](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree11.png)
+![sslforfree11](../assets/img/certificateChain/sslforfree11.png)
 ▼ 每個 DNS 紀錄更新的時間不一定，可以點選下面的連結確認 DNS 是否有更新
-![sslforfree12](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree12.png)
+![sslforfree12](../assets/img/certificateChain/sslforfree12.png)
 ▼ 確認更新後就可以點選 Download SSL Certificate
-![sslforfree13](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree13.png)
+![sslforfree13](../assets/img/certificateChain/sslforfree13.png)
 ▼ 這裡可以申請帳號當憑證快要到期時會發信通知您記得更新
-![sslforfree14](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree14.png)
+![sslforfree14](../assets/img/certificateChain/sslforfree14.png)
 ▼ 從網頁最下方點選 Download All SSL Certificate Files
-![sslforfree15](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree15.png)
+![sslforfree15](../assets/img/certificateChain/sslforfree15.png)
 ▼ 下載檔案會有三個
-![sslforfree16](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/sslforfree16.png)
+![sslforfree16](../assets/img/certificateChain/sslforfree16.png)
 1. ca_bundle.crt 為根憑證(Root CA certificate)＋中繼憑證(Intermediate CA certificate)
 2. certificate.crt 為憑證(Server certificate)
 3. private.key 為私鑰
@@ -75,7 +75,7 @@ introduction:
 
 看起來很複雜，舉個例子來看
 首先，打開 Safari 找一個有 https 的網址，例如 https://aatp.com.tw ，點擊網址旁邊的鎖頭，點選 Show Certificate，這時我們會看到一個階梯式架構，第一層就是根憑證(Root CA certificate)，根憑證會內建在網頁瀏覽器裡，第二層就是中繼憑證(Intermediate CA certificate)，第三層則是伺服器的憑證(Server certificate)
-![aatp.com.tw](https://raw.githubusercontent.com/henry510859/TWDC_blog_photo/master/certificate%20chain/aatp.com.tw.png)
+![aatp.com.tw](../assets/img/certificateChain/aatp.com.tw.png)
 
 再來教大家如何從剛才向Let's Encrypt 申請憑證來建立憑證鍊
 
